@@ -1,0 +1,182 @@
+$baseSize: 4px;
+$bg: #acb4bd;
+$text-color: #212529;
+$highlight-color: #424649;
+
+@mixin container {
+    padding: ($baseSize * 25) ($baseSize * 15);
+}
+
+@mixin flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin shadow {
+    box-shadow: 3px 3px 5px rgba(90, 87, 87, 0.377);
+}
+
+.about {
+    position: relative;
+    background-color: rgba($bg, 0.2);
+    margin-top: 150px;
+
+    .img-bg {
+        opacity: 0.15;
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        @include container();
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+
+        .cont {
+            .card {
+                padding: $baseSize * 2;
+                position: absolute;
+                top: -80px;
+                img {
+                    height: 450px;
+                    width: auto;
+                    @include shadow();
+                }
+            }
+        }
+
+        .desc-about {
+            margin: ($baseSize * 5) 0;
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .bold {
+                font-weight: bold;
+                margin-top: -40px;
+                margin-bottom: $baseSize * 4;
+            }
+
+            span {
+                border-bottom: 5px solid rgb(214, 214, 32);
+            }
+
+            .button {
+                font-weight: bold;
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: $highlight-color;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 24px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                  background-color: darken($highlight-color, 10%);
+                }
+            }
+        }
+    }
+}
+
+#special {
+    .container {
+        @include container();
+        margin-top: 30px;
+        h3 {
+            font-weight: bold;
+            font-size: 36px;
+            span {
+                border-bottom: 5px solid rgb(214, 214, 32);
+            }
+        }
+        .flexbox {
+            @include flexbox();
+            .flex-content {
+                @include flexbox();
+                flex-wrap: wrap;
+                margin-top: $baseSize * 4;
+                gap: 1em 2.5em;
+                .card {
+                    @include shadow();
+                    background-color: #fff;
+                    padding: 12px;
+                    border: none;
+                    border-radius: 12px;
+                    div {
+                        .btn {
+                            font-weight: bold;
+                            position: absolute;
+                            padding: 2px 4px;
+                            margin-left: 6px;
+                            margin-top: 6px;
+                            @include shadow();
+                            background-color: #fff;
+                            border-radius: 24px;
+                            span {
+                                display: flex;
+                                gap: 4px;
+                                i {
+                                    color: rgb(201, 201, 47);
+                                }
+                            }
+                        }
+                        img {
+                            border-radius: 8px;
+                        }
+                    }
+                    .card-body {
+                        width: 100%;
+                        .flex-price {
+                            display: flex;
+                            justify-content: space-between;
+                            font-weight: bold;
+                            margin: 0 15px;
+                        }
+                        .flex-desc {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: -10px 15px 0;
+                            .desc {
+                                p {
+                                    width: 95%;
+                                }
+                            }
+                            .icon {
+                                i {
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: #fff;
+                                    font-size: $baseSize * 5.5;
+                                    background-color: rgb(211, 211, 12);
+                                    border-radius: 100%;
+                                    padding: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: #745d5d;
+        }
+    }
+}

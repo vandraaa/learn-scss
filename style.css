@@ -1,0 +1,146 @@
+.about {
+  position: relative;
+  background-color: rgba(172, 180, 189, 0.2);
+  margin-top: 150px;
+}
+.about .img-bg {
+  opacity: 0.15;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.about .container {
+  padding: 100px 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.about .container .cont .card {
+  padding: 8px;
+  position: absolute;
+  top: -80px;
+}
+.about .container .cont .card img {
+  height: 450px;
+  width: auto;
+  box-shadow: 3px 3px 5px rgba(90, 87, 87, 0.377);
+}
+.about .container .desc-about {
+  margin: 20px 0;
+}
+.about .container .desc-about h1 {
+  font-size: 36px;
+}
+.about .container .desc-about .bold {
+  font-weight: bold;
+  margin-top: -40px;
+  margin-bottom: 16px;
+}
+.about .container .desc-about span {
+  border-bottom: 5px solid rgb(214, 214, 32);
+}
+.about .container .desc-about .button {
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #424649;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 24px;
+  transition: background-color 0.3s ease;
+}
+.about .container .desc-about .button:hover {
+  background-color: #2a2c2e;
+}
+
+#special .container {
+  padding: 100px 60px;
+  margin-top: 30px;
+}
+#special .container h3 {
+  font-weight: bold;
+  font-size: 36px;
+}
+#special .container h3 span {
+  border-bottom: 5px solid rgb(214, 214, 32);
+}
+#special .container .flexbox {
+  display: flex;
+  justify-content: center;
+}
+#special .container .flexbox .flex-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  gap: 1em 2.5em;
+}
+#special .container .flexbox .flex-content .card {
+  box-shadow: 3px 3px 5px rgba(90, 87, 87, 0.377);
+  background-color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+}
+#special .container .flexbox .flex-content .card div .btn {
+  font-weight: bold;
+  position: absolute;
+  padding: 2px 4px;
+  margin-left: 6px;
+  margin-top: 6px;
+  box-shadow: 3px 3px 5px rgba(90, 87, 87, 0.377);
+  background-color: #fff;
+  border-radius: 24px;
+}
+#special .container .flexbox .flex-content .card div .btn span {
+  display: flex;
+  gap: 4px;
+}
+#special .container .flexbox .flex-content .card div .btn span i {
+  color: rgb(201, 201, 47);
+}
+#special .container .flexbox .flex-content .card div img {
+  border-radius: 8px;
+}
+#special .container .flexbox .flex-content .card .card-body {
+  width: 100%;
+}
+#special .container .flexbox .flex-content .card .card-body .flex-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 0 15px;
+}
+#special .container .flexbox .flex-content .card .card-body .flex-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px 15px 0;
+}
+#special .container .flexbox .flex-content .card .card-body .flex-desc .desc p {
+  width: 95%;
+}
+#special .container .flexbox .flex-content .card .card-body .flex-desc .icon i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 22px;
+  background-color: rgb(211, 211, 12);
+  border-radius: 100%;
+  padding: 8px;
+}
+
+footer {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #745d5d;
+}/*# sourceMappingURL=style.css.map */
